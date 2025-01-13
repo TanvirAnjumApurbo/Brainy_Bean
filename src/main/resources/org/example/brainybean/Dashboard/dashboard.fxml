@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="Borderpane" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox fx:id="MainContent" alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="Toppane" alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="960.0" spacing="20.0" stylesheets="@dashboard.css">
+               <children>
+                  <VBox fx:id="Logo" alignment="CENTER" prefHeight="60.0" prefWidth="60.0">
+                     <children>
+                        <ImageView fx:id="Logo1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/menubar.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                     <image>
+                        <Image url="@../icon/logo1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Text fill="#407bff" strokeType="OUTSIDE" strokeWidth="0.0" text="BrainyBean" translateX="-25.0">
+                     <font>
+                        <Font name="Ubuntu Medium" size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField prefHeight="29.0" prefWidth="362.0" promptText="Search" stylesheets="@dashboard.css" translateX="100.0">
+                     <font>
+                        <Font name="Ubuntu Light" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="90.0">
+                     <image>
+                        <Image url="@../icon/magnifying-glass.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <AnchorPane prefHeight="45.0" prefWidth="101.0" stylesheets="@dashboard.css" />
+                  <AnchorPane prefHeight="45.0" prefWidth="193.0" translateX="-25.0">
+                     <children>
+                        <Button alignment="CENTER" layoutX="36.0" layoutY="8.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="122.0" stylesheets="@dashboard.css" text="Create Quiz" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Ubuntu Medium" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox fx:id="Leftpane" alignment="TOP_CENTER" prefHeight="578.0" prefWidth="60.0" spacing="10.0" stylesheets="@dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" x="10.0" y="10.0">
+               <image>
+                  <Image url="@../icon/Home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/ranking.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="30.0" layoutX="10.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" translateY="15.0">
+               <image>
+                  <Image url="@../icon/inspiration.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="20.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" translateY="30.0">
+               <image>
+                  <Image url="@../icon/account.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fitHeight="60.0" fitWidth="22.0" layoutX="10.0" layoutY="355.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateY="45.0">
+               <image>
+                  <Image url="@../icon/logout%20(1).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

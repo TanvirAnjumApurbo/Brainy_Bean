@@ -1,0 +1,60 @@
+/* General styles */
+#Borderpane {
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+#Leftpane {
+    -fx-background-color: rgb(64, 123, 255);
+    -fx-effect: dropshadow(three-pass-box, rgb(64, 123, 255), 10, 0, 0, 0);
+}
+
+#Toppane {
+    -fx-background-color: rgb(201, 230, 240);
+    -fx-effect: dropshadow(three-pass-box, rgb(64, 123, 255), 10, 0, 0, 0);
+}
+
+#Logo {
+    -fx-background-color: rgb(64, 123, 255);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.51), 10, 0, 0, 0);
+    -fx-border-radius: 10;
+}
+
+/* Button styles */
+Button {
+    -fx-background-color: #407bff;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: 'Ubuntu Medium';
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+
+}
+
+Button:hover {
+    -fx-background-color: #305bb5;
+}
+
+/* TextField styles */
+TextField {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #407bff;
+    -fx-border-radius: 5;
+    -fx-padding: 5 10 5 10;
+    -fx-font-family: 'Ubuntu Light';
+}
+
+TextField:focused {
+    -fx-border-color: #305bb5;
+}
+
+/* ImageView hover effect */
+ImageView:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+/* Text styles */
+Text {
+    -fx-font-family: 'Ubuntu Medium';
+    -fx-fill: #407bff;
+}
